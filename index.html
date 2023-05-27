@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crypto Index Project 3</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="table-container">
+      <div class="btn-search-box">
+        <input type="text" class="search-box" id="searchInput" placeholder="Search..." />
+        <button class="all-btn" onclick="search()">Search</button>
+        <button class="all-btn" onclick="sortByMarketCap()">Sort by Market Cap</button>
+        <button class="all-btn" onclick="sortByPercentageChange()">
+          Sort by Percentage Change
+        </button>
+      </div>
+      <table id="coinTable">
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Symbol</th>
+          <th>Price</th>
+          <th>Total Volume</th>
+          <th>Price change in %</th>
+          <th>Market Cap</th>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
